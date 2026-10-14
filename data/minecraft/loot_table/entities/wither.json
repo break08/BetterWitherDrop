@@ -1,6 +1,5 @@
 {
   "type": "minecraft:entity",
-  "random_sequence": "minecraft:entities/wither",
   "pools": [
     {
       "rolls": 2,
@@ -8,15 +7,13 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:wither_skeleton_skull",
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.4
-            }
-          ],
-          "functions": []
+          "condition": {
+            "type": "minecraft:random_chance",
+            "chance": 0.4
+          }
         }
       ]
     }
-  ]
+  ],
+  "random_sequence": "minecraft:entities/wither"
 }
